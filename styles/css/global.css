@@ -13,8 +13,8 @@
 /* fonts */
 @font-face {
   font-family: "GolosText-Bold";
-  src: url("/assets/fonts/main/GolosText-Bold.woff") format("woff"),
-    url("/assets/fonts/main/GolosText-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/main/GolosText-Bold.woff") format("woff"),
+    url("../../assets/fonts/main/GolosText-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: "GolosText-DemiBold";
-  src: url("/assets/fonts/main/GolosText-DemiBold.woff") format("woff"),
-    url("/assets/fonts/main/GolosText-DemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/main/GolosText-DemiBold.woff") format("woff"),
+    url("../../assets/fonts/main/GolosText-DemiBold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: "GolosText-Medium";
-  src: url("/assets/fonts/main/GolosText-Medium.woff") format("woff"),
-    url("/assets/fonts/main/GolosText-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/main/GolosText-Medium.woff") format("woff"),
+    url("../../assets/fonts/main/GolosText-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -40,8 +40,8 @@
 
 @font-face {
   font-family: "GolosText-Regular";
-  src: url("/assets/fonts/main/GolosText-Regular.woff") format("woff"),
-    url("/assets/fonts/main/GolosText-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/main/GolosText-Regular.woff") format("woff"),
+    url("../../assets/fonts/main/GolosText-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -49,8 +49,8 @@
 
 @font-face {
   font-family: "Merriweather-Bold";
-  src: url("/assets/fonts/main/Merriweather-Bold.woff") format("woff"),
-    url("/assets/fonts/main/Merriweather-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/main/Merriweather-Bold.woff") format("woff"),
+    url("../../assets/fonts/main/Merriweather-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -58,8 +58,8 @@
 
 @font-face {
   font-family: "Merriweather-Regular";
-  src: url("/assets/fonts/main/Merriweather-Regular.woff") format("woff"),
-    url("/assets/fonts/main/Merriweather-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/main/Merriweather-Regular.woff") format("woff"),
+    url("../../assets/fonts/main/Merriweather-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -67,8 +67,8 @@
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("/assets/fonts/main/Montserrat-Medium.woff") format("woff"),
-    url("/assets/fonts/main/Montserrat-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/main/Montserrat-Medium.woff") format("woff"),
+    url("../../assets/fonts/main/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
   font-style: normal;

@@ -261,7 +261,7 @@
     flex-direction: column;
     gap: 28px;
     min-height: 100%;
-    background-image: url("/assets/images/main/steps/step-card-bg.png");
+    background-image: url("../../assets/images/main/steps/step-card-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -318,7 +318,7 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  background-image: url("/assets/images/main/steps/step-card-bg.png");
+  background-image: url("../../assets/images/main/steps/step-card-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -531,7 +531,7 @@
   height: 244px;
   overflow: hidden;
   border-radius: 50%;
-  background-image: url("/assets/images/main/participants/avatar-bg.png");
+  background-image: url("../../assets/images/main/participants/avatar-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
