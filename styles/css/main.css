@@ -1,6 +1,6 @@
 /* hero section */
 .hero {
-  background-image: url("../../assets/images/main/hero/hero-bg.png");
+  background-image: url("/assets/images/main/hero/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -315,7 +315,7 @@
 
 @media screen and (max-width: 767.5px) {
   .hero {
-    background-image: url("../../assets/images/main/hero/hero-bg-mobile.png");
+    background-image: url("/assets/images/main/hero/hero-bg-mobile.png");
     background-position-y: 7%;
   }
 
