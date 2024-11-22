@@ -1,0 +1,319 @@
+/* global vars */
+:root {
+  --color-primary: #3057a2;
+  --color-secondary: #fbce51;
+  --color-accent: #f54932;
+  --color-light: #d6d6d6;
+  --color-dark: #313131;
+  --color-text-light: #fff;
+  --color-border: #d0d0d0;
+  --color-background: #e9ded4;
+}
+
+/* fonts */
+@font-face {
+  font-family: "GolosText-Bold";
+  src: url("../../../assets/fonts/main/GolosText-Bold.woff") format("woff"),
+    url("../../../assets/fonts/main/GolosText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GolosText-DemiBold";
+  src: url("../../../assets/fonts/main/GolosText-DemiBold.woff") format("woff"),
+    url("../../../assets/fonts/main/GolosText-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GolosText-Medium";
+  src: url("../../../assets/fonts/main/GolosText-Medium.woff") format("woff"),
+    url("../../../assets/fonts/main/GolosText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GolosText-Regular";
+  src: url("../../../assets/fonts/main/GolosText-Regular.woff") format("woff"),
+    url("../../../assets/fonts/main/GolosText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("../../../assets/fonts/main/Merriweather-Bold.woff") format("woff"),
+    url("../../../assets/fonts/main/Merriweather-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url("../../../assets/fonts/main/Merriweather-Regular.woff")
+      format("woff"),
+    url("../../../assets/fonts/main/Merriweather-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../../../assets/fonts/main/Montserrat-Medium.woff") format("woff"),
+    url("../../../assets/fonts/main/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* container settings */
+[class*="__container"] {
+  max-width: 1592px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (max-width: 1920px) {
+  [class*="__container"] {
+    max-width: 85.375rem;
+    padding: 0 72px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1659.5px) {
+  [class*="__container"] {
+    max-width: 85.375rem;
+    padding: 0 72px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1279.5px) {
+  [class*="__container"] {
+    max-width: 62rem;
+    padding: 0 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.5px) {
+  [class*="__container"] {
+    max-width: 45.5rem;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.5px) {
+  [class*="__container"] {
+    max-width: 25.9375rem;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-light) var(--color-light);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-text-light);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border: 0 none var(--color-text-light);
+  background-color: var(--color-text-light);
+  transition: all 280ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text-light);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 14px;
+  font-family: "GolosText-Regular", sans-serif;
+  font-style: normal;
+  color: var(--color-dark);
+  background: var(--color-text-light);
+  overflow-y: auto;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  line-height: 1;
+  height: 100%;
+  min-width: 320px;
+}
+
+.body.lock {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+    overflow-x: scroll;
+  }
+}
+
+.full-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  min-height: 100dvh;
+}
+
+@media screen and (max-width: 375px) {
+  .full-wrapper {
+    overflow: hidden;
+  }
+}
+
+.full-wrapper > main {
+  flex: 1 1 auto;
+}
+
+.full-wrapper > * {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: 0;
+}
+
+button {
+  outline: 0;
+  border: transparent;
+  background: 0 0;
+  cursor: pointer;
+}
+
+.main-title {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 100dvh;
+}
+
+.logo {
+  max-width: 245px;
+}
+
+@media screen and (max-width: 767.5px) {
+  .logo {
+    max-width: 212px;
+  }
+}
+
+.main-btn {
+  padding: 15px 40px;
+  font-family: "GolosText-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: var(--color-dark);
+  text-align: center;
+  border-radius: 66px;
+  transition: all 0.3s linear;
+}
+
+.main-btn.main-btn--black {
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+}
+
+.main-btn.main-btn--transparent {
+  border: 1px solid var(--color-dark);
+}
+
+@media (any-hover: hover) {
+  .main-btn.main-btn--black:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+  }
+
+  .main-btn.main-btn--transparent:hover {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+  }
+}
+
+.main-btn.main-btn--black:focus-visible {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.main-btn.main-btn--transparent:focus-visible {
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+}
+
+@media screen and (max-width: 1279.5px) {
+  .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 47px;
+    max-height: 47px;
+  }
+}

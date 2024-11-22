@@ -1,0 +1,473 @@
+/* hero section */
+.hero {
+  background-image: url("../../assets/images/main/hero/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.hero__inner {
+  padding: 26px 0 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 62px;
+}
+
+.hero__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 542px;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Merriweather-Regular", sans-serif;
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.hero__title h2:last-child {
+  text-align: center;
+}
+
+.hero__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "GolosText-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--color-dark);
+}
+
+.hero__descr span {
+  text-align: center;
+}
+
+.hero__actions {
+  display: grid;
+  grid-template-columns: repeat(2, 263px);
+  gap: 16px;
+}
+
+.hero__actions .main-btn:last-child {
+  padding: 15px 50px;
+}
+
+/* schedule section */
+.schedule h2 {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.schedule__inner {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.schedule__top {
+  display: grid;
+  grid-template-columns: auto 394px;
+  align-items: center;
+  gap: 46px;
+}
+
+.schedule__text {
+  font-family: "Merriweather-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 39.6px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.schedule__text b {
+  font-family: "Merriweather-Bold", sans-serif;
+  font-size: 36px;
+  line-height: 48.6px;
+  color: var(--color-accent);
+}
+
+.schedule__img--absolute {
+  width: 474px;
+  height: 527px;
+  position: relative;
+}
+
+.schedule__img--absolute img {
+  position: absolute;
+  top: -28px;
+  left: -27px;
+  max-width: 528px;
+}
+
+.schedule__button {
+  display: grid;
+  grid-template-columns: 474px auto;
+  gap: 44px;
+  align-items: center;
+}
+
+.schedule__announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 45px;
+}
+
+/* announcement */
+.announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 36px;
+}
+
+.announcement__grid {
+  display: grid;
+  grid-template-columns: 43% auto;
+  gap: 2px;
+  background-color: var(--color-border);
+}
+
+.announcement__property {
+  padding: 15px 15px 15px 0;
+  font-family: "GolosText-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-dark);
+  background-color: var(--color-text-light);
+}
+
+.announcement__value {
+  padding: 15px;
+  font-family: "GolosText-DemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-dark);
+  background-color: var(--color-text-light);
+}
+
+.announcement__value--has-discount {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.announcement__value--has-discount span:first-child {
+  text-decoration: line-through;
+  text-decoration-color: var(--color-accent);
+}
+
+/* footnote */
+.footnote {
+  font-family: "GolosText-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-primary);
+}
+
+/* steps section */
+.steps__inner {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 52px;
+}
+
+.steps__inner .section-title {
+  max-width: 60%;
+}
+
+/* participants */
+.participants__inner {
+  padding: 82px 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--color-background);
+}
+
+.footer__inner {
+  padding: 40px 0 72px;
+}
+
+.footer__inner p {
+  text-align: left;
+  font-family: "GolosText-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-dark);
+}
+
+/* media */
+@media screen and (max-width: 1279.5px) {
+  .hero__inner {
+    gap: 40px;
+  }
+
+  .hero__button {
+    gap: 24px;
+  }
+
+  .hero__content {
+    gap: 12px;
+    max-width: 460px;
+  }
+
+  .hero__title {
+    font-family: "Merriweather-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .hero__title h2:last-child {
+    text-align: left;
+  }
+
+  .hero__descr {
+    align-items: flex-start;
+  }
+
+  .hero__descr span {
+    text-align: start;
+  }
+
+  .hero__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule__inner {
+    padding: 48px 0;
+  }
+
+  .schedule__text {
+    font-family: "Merriweather-Regular", sans-serif;
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .schedule__text b {
+    font-family: "Merriweather-Bold", sans-serif;
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .schedule__img {
+    margin: 0 auto;
+  }
+
+  .schedule__button {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .schedule__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule__text {
+    display: flex;
+    flex-direction: column;
+    gap: 261px;
+  }
+
+  .schedule__img:not(.schedule__img--absolute) {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .hero {
+    background-image: url("../../assets/images/main/hero/hero-bg-mobile.png");
+    background-position-y: 7%;
+  }
+
+  .hero__inner {
+    padding: 20px 0 290px;
+  }
+
+  .hero__button {
+    gap: 30px;
+  }
+
+  .hero__content {
+    gap: 24px;
+  }
+
+  .hero__title {
+    font-family: "Merriweather-Regular", sans-serif;
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .hero__title h2:last-child {
+    text-align: center;
+  }
+
+  .hero__descr {
+    display: block;
+    text-align: start;
+  }
+
+  .hero__descr span {
+    display: contents;
+  }
+
+  .hero__actions {
+    align-self: center;
+  }
+
+  .schedule__inner {
+    gap: 28px;
+  }
+
+  .schedule__text span {
+    display: inline;
+  }
+
+  .schedule__img:not(.schedule__img--absolute) {
+    width: 100%;
+    max-width: 335px;
+  }
+
+  .schedule__img--absolute {
+    height: 420px;
+    width: 100%;
+  }
+
+  .schedule__img--absolute img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 335px;
+    height: 402px;
+  }
+
+  .schedule__button {
+    gap: 16px;
+  }
+
+  .announcement {
+    gap: 8px;
+  }
+
+  .announcement__grid {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: transparent;
+    gap: 0;
+  }
+
+  .announcement__grid .announcement__property:not(:nth-child(7)),
+  .announcement__grid .announcement__value:not(:nth-child(8)) {
+    grid-column: span 2;
+  }
+
+  .announcement__grid .announcement__property:nth-child(7) {
+    margin-bottom: 16px;
+    padding-bottom: 13px;
+    height: fit-content;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .announcement__property {
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  .announcement__value {
+    margin-bottom: 16px;
+    padding: 0;
+    padding-bottom: 13px;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .footnote {
+    font-family: "GolosText-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .steps__inner {
+    padding: 74px 0;
+    gap: 144px;
+  }
+
+  .steps__inner .section-title {
+    max-width: 100%;
+  }
+
+  .participants__inner {
+    padding: 110px 0 102px;
+  }
+
+  .footer__inner {
+    padding: 40px 0 60px;
+  }
+
+  .footer__inner p {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+
+@media (any-hover: hover) {
+  .main-btn.main-btn--black:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+  }
+
+  .main-btn.main-btn--transparent:hover {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+  }
+
+  .more-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+
+  .slider-btn:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .slider-btn:hover {
+    background-color: var(--color-secondary);
+  }
+}
